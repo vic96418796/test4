@@ -16,8 +16,9 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Button register = findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View v) {
+                public void onClick(View v) {
                 if (v.getId() == R.id.register) {
                     new AlertDialog.Builder(Main2Activity.this)
                             .setTitle("註冊結果")
@@ -33,6 +34,8 @@ public class Main2Activity extends AppCompatActivity {
                             .show();
                 }
             }
+
+
         });
     }
 }
